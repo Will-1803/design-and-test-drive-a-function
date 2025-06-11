@@ -10,13 +10,19 @@ def test_to_do_checker_string_no_empty():
     actual = str(e.value)
     assert actual == "No text input"
 
-# extract_uppercase("") => "no info given"
+
 
 # """
 # Given a string that contains #TODO, return true
 
 # """
 # to_do_checker("#TODO") => True
+
+def test_given_TODO():
+    result = to_do_checker('#TODO')
+    assert result == True
+
+
 
 # """
 # Given a string that contains #todo in lower case 

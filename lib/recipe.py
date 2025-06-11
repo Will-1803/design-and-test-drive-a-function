@@ -1,3 +1,3 @@
 
-def to_do_checker():
-    pass
+def to_do_checker(text):
+    raise Exception('No text input')
