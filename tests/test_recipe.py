@@ -27,7 +27,11 @@ def test_given_TODO():
 # """
 # Given a string that contains #todo in lower case 
 # """
-# to_do_checker("#todo") => False
+
+def test_given_TODO():
+    result = to_do_checker('#todo')
+    assert result == False
+
 
 # """
 # Given a string that does not contain #TODO return False
