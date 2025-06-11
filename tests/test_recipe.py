@@ -39,3 +39,13 @@ def test_given_TODO():
 # to_do_checker("GO TO THE SHOP") => False
 
 # """
+
+def test_not_contain_TODO():
+    result = to_do_checker('Go to the shop')
+    assert result == False
+
+# If string returns contains #TODO and something else, return True
+
+def test_contains_TODO_and_something_else():
+    result = to_do_checker('#TODO Go to the shop')
+    assert result == True
